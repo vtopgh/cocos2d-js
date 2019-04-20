@@ -11,7 +11,7 @@ window.onload = function(){
                     background.setPosition(size.width / 2, size.height / 2);
                     this.addChild(background, 0);
 
-                    //var action2 = cc.skewBy(0, -1, -35);
+                    var action2 = cc.skewBy(0, -1, -35);
                     //var action = cc.setSkewX(-45);
 
                     //var action = cc.skewTo(0, 0, -45);
@@ -21,7 +21,7 @@ window.onload = function(){
                     var video = videoNode.playVideo('GOT.mp4', cc.p(100, 300), cc.size(640, 352));
                     videoNode.setScale(0.4);
                     videoNode.setPosition(400,  327);
-                    //videoNode.runAction(action);
+                    videoNode.runAction(action2);
                     background.addChild(videoNode, 0);
                     setTimeout(function () {
                         video.play();
