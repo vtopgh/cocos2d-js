@@ -1,0 +1,8 @@
+node_modules/
+data/
+/config/settings-local.json
+.vscode
+**.DS_Store
+.idea/
+build/
+.idea
